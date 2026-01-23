@@ -59,12 +59,12 @@ export function Sidebar({ groups, onNavigate }: SidebarProps) {
             <img 
               src={siteConfig.logo.light}
               alt={siteConfig.logo.alt}
-              className="h-10 w-auto dark:hidden"
+              className="h-14 w-auto dark:hidden"
             />
             <img 
               src={siteConfig.logo.dark}
               alt={siteConfig.logo.alt}
-              className="h-10 w-auto hidden dark:block"
+              className="h-14 w-auto hidden dark:block"
             />
           </Link>
           <ThemeToggle />

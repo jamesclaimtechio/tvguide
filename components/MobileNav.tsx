@@ -40,12 +40,12 @@ export function MobileNav({ groups }: MobileNavProps) {
           <img 
             src={siteConfig.logo.light}
             alt={siteConfig.logo.alt}
-            className="h-8 w-auto dark:hidden"
+            className="h-10 w-auto dark:hidden"
           />
           <img 
             src={siteConfig.logo.dark}
             alt={siteConfig.logo.alt}
-            className="h-8 w-auto hidden dark:block"
+            className="h-10 w-auto hidden dark:block"
           />
         </div>
       </div>
