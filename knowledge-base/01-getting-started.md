@@ -1,10 +1,3 @@
----
-title: Getting Started
-description: First login, core concepts, and dashboard overview for TotalView AI
-slug: getting-started
-order: 1
----
-
 # Getting Started
 
 ## What is TotalView AI?
@@ -125,7 +118,7 @@ An **organization** is your top-level workspace. It contains:
 
 Most users belong to one organization. Enterprise customers may have multiple organizations (e.g., one per department or client).
 
-> **Learn More**: [Organizations & Teams](/organizations-teams)
+> **Learn More**: [Organizations & Teams](./02-organizations-teams.md)
 
 ### Campaigns
 
@@ -141,7 +134,7 @@ A **campaign** is a project that groups related calls together. Each campaign ha
 - "Customer Support - Billing"
 - "New Agent Training"
 
-> **Learn More**: [Campaigns](/campaigns)
+> **Learn More**: [Campaigns](./03-campaigns.md)
 
 ### Quality Checks
 
@@ -155,7 +148,7 @@ A **campaign** is a project that groups related calls together. Each campaign ha
 | **Severity** | `info`, `warning`, or `critical` if the check fails |
 | **Weight** | How much this check affects the overall score |
 
-> **Learn More**: [Quality Checks](/quality-checks)
+> **Learn More**: [Quality Checks](./04-quality-checks.md)
 
 ### Call Recordings
 
@@ -173,7 +166,7 @@ Upload → Transcribe → Analyze → Score
 | COMPLETED | Ready for review |
 | FAILED | Error occurred (can retry) |
 
-> **Learn More**: [Analysis & Scoring](/analysis-scoring)
+> **Learn More**: [Analysis & Scoring](./06-analysis-scoring.md)
 
 ### Scores
 
@@ -197,7 +190,7 @@ These thresholds are configurable per campaign.
 - Send coaching scorecards
 - Optionally give agents platform access
 
-> **Learn More**: [Agents](/agents)
+> **Learn More**: [Agents](./09-agents.md)
 
 ---
 
@@ -367,8 +360,8 @@ Invite links expire after 7 days. Ask your organization admin to resend the invi
 ### Where can I get help?
 
 - **This Knowledge Base**: Comprehensive documentation
-- **AI Copilot**: Ask questions in natural language ([Learn more](/ai-copilot))
-- **Troubleshooting Guide**: Common issues and solutions ([View guide](/troubleshooting))
+- **AI Copilot**: Ask questions in natural language ([Learn more](./13-ai-copilot.md))
+- **Troubleshooting Guide**: Common issues and solutions ([View guide](./15-troubleshooting.md))
 - **Support**: Contact your organization admin or TotalView support
 
 ---
@@ -377,8 +370,8 @@ Invite links expire after 7 days. Ask your organization admin to resend the invi
 
 Now that you understand the basics:
 
-1. **Invite Your Team** → [Organizations & Teams](/organizations-teams)
-2. **Create More Campaigns** → [Campaigns](/campaigns)
-3. **Master Quality Checks** → [Quality Checks](/quality-checks)
-4. **Set Up Agents** → [Agents](/agents)
-5. **Explore AI Copilot** → [AI Copilot](/ai-copilot)
+1. **Invite Your Team** → [Organizations & Teams](./02-organizations-teams.md)
+2. **Create More Campaigns** → [Campaigns](./03-campaigns.md)
+3. **Master Quality Checks** → [Quality Checks](./04-quality-checks.md)
+4. **Set Up Agents** → [Agents](./09-agents.md)
+5. **Explore AI Copilot** → [AI Copilot](./13-ai-copilot.md)

@@ -13,38 +13,31 @@ export const siteConfig = {
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   
   /**
-   * TODO: Your site/product name (used in header and meta tags)
-   * Example: "Acme Corp" or "My Product"
+   * Site/product name (used in header and meta tags)
    */
-  name: "Knowledge Base",
+  name: "TotalView AI",
   
   /**
-   * TODO: Main title for the documentation site
+   * Main title for the documentation site
    * This appears in the browser tab and meta tags
-   * Example: "Acme Documentation" or "Help Center"
    */
-  title: "Knowledge Base",
+  title: "TotalView AI Documentation",
   
   /**
-   * TODO: Template for page titles
+   * Template for page titles
    * %s will be replaced with the page title
-   * Example: "%s | Acme Docs" becomes "Getting Started | Acme Docs"
    */
-  titleTemplate: "%s | Docs",
+  titleTemplate: "%s | TotalView AI",
   
   /**
-   * TODO: Short description of your documentation (for SEO)
-   * Keep it under 160 characters for best SEO results
-   * Example: "Complete guides and API reference for Acme products"
+   * Short description of your documentation (for SEO)
    */
-  description: "Documentation and guides for your product or project.",
+  description: "Comprehensive guides for the TotalView AI call center quality assurance platform",
   
   /**
-   * TODO: Keywords for SEO (helps search engines understand your content)
-   * Add 5-10 relevant keywords
-   * Example: ["api", "sdk", "integration", "tutorial", "reference"]
+   * Keywords for SEO (helps search engines understand your content)
    */
-  keywords: ["documentation", "knowledge base", "guides", "help"],
+  keywords: ["call center", "quality assurance", "QA", "AI", "transcription", "analytics", "agent coaching"],
 
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   // LOGO CONFIGURATION
@@ -52,26 +45,19 @@ export const siteConfig = {
   
   logo: {
     /**
-     * TODO: Path to your logo for LIGHT mode (typically dark-colored logo)
-     * Place your logo file in the /public folder
-     * Recommended: SVG format for scalability, or PNG with transparent background
-     * Size: Height ~40-60px, width proportional
-     * Example: "/logo.svg" or "/acme-logo-dark.png"
+     * Logo for light mode (dark text on light background)
      */
-    light: "/TODO-logo-light.png",
+    light: "/totalview-logo-light.svg",
     
     /**
-     * TODO: Path to your logo for DARK mode (typically light-colored logo)
-     * If you only have one logo, use the same path for both light and dark
-     * Example: "/logo-light.svg" or "/acme-logo-white.png"
+     * Logo for dark mode (white text on dark background)
      */
-    dark: "/TODO-logo-dark.png",
+    dark: "/totalview-logo-dark.svg",
     
     /**
-     * TODO: Alt text for logo (accessibility)
-     * Example: "Acme Corp Logo"
+     * Alt text for logo (accessibility)
      */
-    alt: "Logo",
+    alt: "TotalView AI Logo",
   },
 
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -122,23 +108,24 @@ export const siteConfig = {
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   
   /**
-   * Documents are automatically grouped into categories based on their "order" value
+   * Documents are grouped into categories based on their "order" value
    * 
-   * How it works:
-   * - A doc with order: 1 falls into the first category that includes 1 in its range
-   * - A doc with order: 15 falls into the category with range [11, 50]
-   * 
-   * TODO: Customize category names and ranges to match your content structure
-   * 
-   * Examples:
-   * - Product docs: ["Overview" (1-5), "Features" (6-20), "API" (21-50)]
-   * - Help center: ["Getting Started" (1-10), "Common Tasks" (11-30), "Troubleshooting" (31-50)]
+   * TotalView AI Documentation Structure:
+   * - Getting Started (1-10): Introduction, core concepts
+   * - Core Features (11-30): Organizations, campaigns, quality checks, uploads
+   * - Analysis & Review (31-50): Scoring, reviewing calls, review queue
+   * - Team Management (51-70): Agents, scorecards, coaching
+   * - Advanced Features (71-90): Reports, keywords, AI copilot
+   * - Reference (91-100): API, troubleshooting
    */
   sidebar: {
     categories: [
       { name: "Getting Started", orderRange: [1, 10] as const },
-      { name: "Guides", orderRange: [11, 50] as const },
-      { name: "Reference", orderRange: [51, 100] as const },
+      { name: "Core Features", orderRange: [11, 30] as const },
+      { name: "Analysis & Review", orderRange: [31, 50] as const },
+      { name: "Team Management", orderRange: [51, 70] as const },
+      { name: "Advanced Features", orderRange: [71, 90] as const },
+      { name: "Reference", orderRange: [91, 100] as const },
     ],
   },
 } as const;
