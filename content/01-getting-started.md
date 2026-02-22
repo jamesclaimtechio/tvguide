@@ -1,384 +1,222 @@
 ---
-title: Getting Started
-description: First login, core concepts, and dashboard overview for TotalView AI
-slug: getting-started
+title: "Getting Started"
+description: "Your first 30 minutes on TotalView — from login to your first analyzed call"
+slug: "getting-started"
 order: 1
 ---
 
-# Getting Started
+## What is TotalView?
 
-## What is TotalView AI?
+TotalView is an AI-powered Call Quality Assurance platform. You upload call recordings, and TotalView automatically transcribes them and evaluates every call against your custom quality checks. Instead of manually listening to a sample of calls, you get AI-driven analysis of 100% of your calls — with quality scores, flagged issues, and coaching insights.
 
-TotalView AI is a call center quality assurance platform that uses artificial intelligence to analyze call recordings. Instead of manually reviewing every call, you define quality checks (evaluation criteria), upload recordings, and let AI do the heavy lifting.
+**Key concepts you will encounter:**
 
-**Key Benefits:**
-
-- **Automated QA**: Process hundreds of calls without manual review
-- **Consistent Scoring**: AI applies the same criteria to every call, eliminating reviewer bias
-- **Actionable Insights**: Get AI-generated summaries, sentiment analysis, and recommendations
-- **Time Savings**: Focus on calls that need attention, not routine reviews
-
-Think of it as having a tireless QA analyst who listens to every call and evaluates it against your exact criteria.
+- **Organization** — Your company workspace in TotalView. All campaigns, agents, and data live within your organization.
+- **Campaign** — A grouping of calls with shared quality checks. Think of it as a QA program — for example, "Sales Inbound" or "Customer Support Q1."
+- **Quality Check** — A specific criterion the AI evaluates on every call. For example, "Did the agent verify the caller's identity?" or "Was the closing statement professional?"
 
 ---
 
-## Account Setup
+## Signing In
 
-### Signing Up
+TotalView uses passwordless authentication. You sign in with your email and a one-time verification code.
 
-1. Visit the TotalView AI signup page
-2. Enter your email address and create a password
-3. Verify your email by clicking the confirmation link
-4. Complete the onboarding wizard (see below)
+1. **Open TotalView** in your browser.
 
-After signup, you become the **Admin** of a new organization.
+2. **Enter your email address** and click **Continue with email**.
+   - TotalView sends you an 8-character verification code.
 
-### Signing In
+3. **Check your email** for the code. Enter it in the verification field and click **Verify and sign in**.
+   - The code is alphanumeric (letters and numbers), uppercase only.
+   - Codes expire after 10 minutes.
 
-1. Go to the login page
-2. Enter your email and password
-3. Click **Sign In**
+4. **If you don't receive the code**, wait 60 seconds, then click **Resend code**.
 
-If your organization uses single sign-on (SSO), click the SSO option instead.
+> **Tip:** If you are an agent, use the **Login as Agent** link on the sign-in page instead. This takes you to the agent-specific portal.
 
-### Password Reset
+### First-Time vs Returning Users
 
-If you've forgotten your password:
-
-1. Click **Forgot Password?** on the login page
-2. Enter your email address
-3. Check your inbox for a reset link (valid for 1 hour)
-4. Click the link and create a new password
-5. Sign in with your new credentials
-
-### Session Management
-
-- Sessions remain active for 7 days of inactivity
-- You can be signed in on multiple devices simultaneously
-- To sign out, click your avatar in the top-right corner and select **Sign Out**
+- **New users** (invited by an organization): You are taken to the dashboard for your organization.
+- **New users** (no organization yet): You are directed to the onboarding wizard.
+- **Returning users**: You land on the dashboard. If you belong to multiple organizations, you may see an organization selector first.
 
 ---
 
-## Onboarding Wizard
+## The Onboarding Wizard
 
-When you first create an account, TotalView AI guides you through a 5-step onboarding wizard to get your first campaign running.
-
-[SCREENSHOT: Onboarding wizard showing step progress indicator]
+If you are setting up a new organization, TotalView guides you through a multi-step onboarding wizard.
 
 ### Step 1: Create Your Organization
 
-Enter your organization name. This creates your workspace where all your campaigns, calls, and team members will live.
+1. **Enter your organization name** — this is the name your team will see (e.g., "Acme Insurance QA").
 
-### Step 2: Choose a Template
+2. **Complete the setup** and proceed to the next step.
 
-Select a campaign template that matches your industry or use case:
+### Step 2: Create Your First Campaign
 
-| Template | Best For |
-|----------|----------|
-| Sales Calls | Outbound sales teams |
-| Customer Support | Inbound support centers |
-| Collections | Debt collection calls |
-| Healthcare | HIPAA-compliant medical calls |
-| Financial Services | Regulated financial conversations |
-| Blank | Custom setup from scratch |
+1. **Choose a campaign template** or start from scratch. Templates come with pre-built quality checks for common use cases (e.g., compliance, sales quality).
 
-Templates come with pre-configured quality checks that you can customize.
+2. **Name your campaign** — pick something descriptive (e.g., "Inbound Claims Calls").
 
-### Step 3: Review Quality Checks
+3. **Review the quality checks** included with your template. You can add, edit, or remove checks later.
 
-Review and customize the quality checks from your template. Each check evaluates a specific aspect of the call:
+### Remaining Steps
 
-- **Compliance checks**: Did the agent follow required procedures?
-- **Quality checks**: How well did the agent handle the conversation?
-- **Business intelligence**: What insights can we extract?
+The wizard continues with additional configuration (transcription settings, team invitations). You can complete these now or skip and return to settings later.
 
-You can add, edit, or remove checks. Don't worry — you can always modify these later.
-
-### Step 4: Upload a Test Call
-
-Upload a sample call recording to see TotalView AI in action. Drag and drop an audio file (MP3, WAV, M4A) or click to browse.
-
-The system will:
-1. Transcribe the audio (1-3 minutes)
-2. Analyze against your quality checks (1-2 minutes)
-3. Generate a quality score
-
-### Step 5: Invite Your Team
-
-Add team members by entering their email addresses. They'll receive invitations to join your organization.
-
-> **Tip**: You can skip this step and invite team members later from Settings.
+Once onboarding is complete, you land on the main dashboard.
 
 ---
 
-## Core Concepts
+## Creating Your First Campaign
 
-Understanding these concepts will help you get the most from TotalView AI.
+If you skipped the onboarding wizard or want to add another campaign:
 
-### Organizations
+1. **Navigate to Campaigns** in the sidebar.
 
-An **organization** is your top-level workspace. It contains:
+2. **Click Create Campaign**.
 
-- All your campaigns
-- Your team members
-- Organization-wide settings and branding
+3. **Enter a name and description** for your campaign.
 
-Most users belong to one organization. Enterprise customers may have multiple organizations (e.g., one per department or client).
+4. **Optionally select a template** to start with pre-configured quality checks.
 
-> **Learn More**: [Organizations & Teams](/organizations-teams)
+5. **Click Create**.
 
-### Campaigns
+You now have a campaign ready for call uploads. See [Campaigns](/campaigns) for full configuration options including quality checks, transcription settings, and flagging rules.
 
-A **campaign** is a project that groups related calls together. Each campaign has:
+---
 
-- Its own set of quality checks
-- Its own calls and agents
-- Configurable scoring thresholds
-- Optional auto-flagging rules
+## Uploading Your First Call
 
-**Example campaigns:**
-- "Q1 2026 Sales Calls"
-- "Customer Support - Billing"
-- "New Agent Training"
+1. **Navigate to Upload** in the sidebar, or click the **Upload** button on your campaign page.
 
-> **Learn More**: [Campaigns](/campaigns)
+2. **Select the campaign** you want to upload to (pre-selected if you came from a campaign page).
 
-### Quality Checks
+3. **Drag and drop your audio file(s)** onto the upload area, or click to browse.
+   - Supported formats: MP3, WAV, M4A, and other common audio formats.
+   - You can upload multiple files at once.
 
-**Quality checks** are the evaluation criteria that AI uses to analyze calls. Each check has:
+4. **Click Upload** to start the process.
 
-| Component | Description |
-|-----------|-------------|
-| **Name** | What the check evaluates (e.g., "Opening Greeting") |
-| **Type** | `compliance`, `quality`, or `business_intel` |
-| **Evaluation Prompt** | Instructions for the AI on what to look for |
-| **Severity** | `info`, `warning`, or `critical` if the check fails |
-| **Weight** | How much this check affects the overall score |
+### What Happens Next
 
-> **Learn More**: [Quality Checks](/quality-checks)
+After you upload, TotalView processes each call through a pipeline:
 
-### Call Recordings
+1. **Upload** — The file is stored securely.
+2. **Transcription** — The audio is transcribed with speaker identification (who said what).
+3. **AI Analysis** — Each quality check is evaluated against the transcript.
+4. **Scoring** — An overall quality score is calculated and flagging rules are applied.
 
-Audio files you upload for analysis. Each call goes through a processing pipeline:
-
-```
-Upload → Transcribe → Analyze → Score
-```
+You can track progress on the dashboard. Each call shows its current status:
 
 | Status | Meaning |
 |--------|---------|
-| PENDING | Uploaded, waiting to process |
-| TRANSCRIBING | Converting audio to text |
-| ANALYZING | AI evaluating against checks |
-| COMPLETED | Ready for review |
-| FAILED | Error occurred (can retry) |
+| Pending | Uploaded, waiting to be processed |
+| Transcribing | Audio is being converted to text |
+| Analyzing | AI is evaluating quality checks |
+| Completed | Analysis is done — results are ready |
+| Failed | Something went wrong (you can retry) |
 
-> **Learn More**: [Analysis & Scoring](/analysis-scoring)
+> **Tip:** Processing typically takes 1-3 minutes per call depending on length. You don't need to wait — results appear automatically when ready.
 
-### Scores
-
-TotalView AI generates scores at two levels:
-
-- **Check Score**: 0-100 for each individual quality check
-- **Overall Score**: Weighted average of all check scores
-
-By default:
-- Score ≥ 70 = **Pass**
-- Score < 70 = **Fail**
-
-These thresholds are configurable per campaign.
-
-### Agents
-
-**Agents** are profiles for your call center representatives. Creating agent profiles allows you to:
-
-- Track individual performance over time
-- Compare agents against each other
-- Send coaching scorecards
-- Optionally give agents platform access
-
-> **Learn More**: [Agents](/agents)
+See [Uploading & Processing Calls](/uploading-calls) for bulk upload, SFTP automation, and troubleshooting.
 
 ---
 
-## Dashboard Overview
+## Reading Your First Results
 
-The dashboard is your command center for call quality analytics.
+Once a call shows **Completed** status:
 
-[SCREENSHOT: Main dashboard showing stats cards, campaign performance, and recent activity]
+1. **Click the call** from your dashboard or campaign page.
 
-### Quick Stats Cards
+2. **Review the Overview tab** for a quick summary:
+   - **Quality Score** (0-100) — the overall rating based on your checks
+   - **Executive Summary** — AI-generated highlights
+   - **Pass/Fail counts** — how many checks passed vs failed
+   - **Key Topics** — main subjects discussed
 
-Four cards at the top summarize your organization:
+3. **Listen to the audio** using the built-in player. The transcript scrolls in sync.
 
-| Card | Description |
-|------|-------------|
-| **Total Calls** | All calls across all campaigns |
-| **Active Campaigns** | Number of active (not archived) campaigns |
-| **Needs Review** | Calls flagged for manual review |
-| **Average Score** | Organization-wide average quality score |
+4. **Check the Quality tab** to see individual check results:
+   - Each check shows **Pass**, **Fail**, or **N/A** with the AI's reasoning.
+   - Critical failures are highlighted in red.
 
-### Campaign Performance
+5. **Take action** if needed:
+   - **Flag for review** if you want a colleague to look at it
+   - **Send a scorecard** to the agent for self-assessment
+   - **Add a coaching note** for the agent's development
 
-Cards showing each campaign with:
-
-- Average quality score (color-coded: green ≥70, yellow 50-69, red <50)
-- Completed calls count
-- Total calls
-- Number of checks configured
-
-Click any campaign card to view that campaign's detail page.
-
-### Recent Activity
-
-A table of the 10 most recent calls showing:
-
-- File name (click to view details)
-- Campaign name
-- Agent name
-- Processing status
-- Quality score
-- Upload time
+See [Reviewing Calls](/call-review) for the complete review workflow.
 
 ---
 
-## Your First 30 Minutes
+## What to Do Next
 
-Follow this quick-start tutorial to get up and running.
+Now that you have your first results, here are the recommended next steps:
 
-### Minutes 1-5: Create Your First Campaign
-
-If you completed onboarding, you already have a campaign. Otherwise:
-
-1. From the dashboard, click **Create Campaign**
-2. Enter a descriptive name (e.g., "Sales Calls - January 2026")
-3. Add an optional description
-4. Choose a template or start blank
-5. Click **Create Campaign**
-
-### Minutes 5-15: Set Up Quality Checks
-
-Navigate to your campaign and click **Checks** in the navigation.
-
-If you used a template, review the pre-configured checks. Otherwise, create 3-5 essential checks to start:
-
-| Check Name | Type | Example Prompt |
-|------------|------|----------------|
-| Opening Greeting | quality | Did the agent introduce themselves and the company within the first 30 seconds? |
-| Customer Verification | compliance | Did the agent verify the customer's identity by asking for name and account number? |
-| Issue Resolution | quality | Did the agent clearly summarize the customer's issue and provide a resolution? |
-| Closing | quality | Did the agent thank the customer and confirm no further questions before ending the call? |
-
-For each check:
-
-1. Click **Add Check**
-2. Fill in the name and evaluation prompt
-3. Optionally use **Improve with AI** to enhance your prompt
-4. Set the check type and severity
-5. Click **Create Check**
-
-### Minutes 15-20: Upload Test Calls
-
-1. Go to **Upload** in the sidebar (or campaign navigation)
-2. Select your campaign from the dropdown
-3. Drag and drop 2-3 test audio files
-4. Click **Upload Files**
-
-Supported formats: MP3, WAV, M4A, MP4 (audio track)
-
-### Minutes 20-30: Review Your Results
-
-1. Wait 2-5 minutes for processing to complete
-2. On the dashboard, click a call in **Recent Activity**
-3. Explore the call detail page:
-   - **Transcript**: Full conversation with speaker labels
-   - **Check Results**: Pass/fail for each quality check with evidence
-   - **AI Summary**: Quick overview of the call
-   - **Sentiment**: Customer mood analysis
-
-4. Play the audio and follow along with the transcript
+| Task | When to Do It | Guide |
+|------|---------------|-------|
+| Add more quality checks | Before uploading more calls | [Quality Checks](/quality-checks) |
+| Invite team members | When you want others reviewing calls | [Organization Settings](/org-settings#inviting-members) |
+| Set up agents | To track individual performance | [Agents](/agents) |
+| Configure flagging rules | To auto-flag calls needing review | [Campaigns](/campaigns#flagging-rules) |
+| Upload more calls | To build your analysis dataset | [Uploading Calls](/uploading-calls) |
+| Set up SFTP | For automated call ingestion | [Uploading Calls](/uploading-calls#sftp-ingestion) |
 
 ---
 
-## Navigation
+## Troubleshooting
 
-### Sidebar Menu
+### I didn't receive my verification code
 
-| Menu Item | Description |
-|-----------|-------------|
-| **Dashboard** | Overview with stats and recent activity |
-| **Campaigns** | List of all your campaigns |
-| **Upload** | Upload new call recordings |
-| **Review Queue** | Calls flagged for review |
-| **Agents** | Agent profiles and performance |
-| **AI Copilot** | Natural language analytics assistant |
-| **Settings** | Organization and personal settings |
+**Symptoms:** No email after clicking "Continue with email."
+**Cause:** Email may be in spam, or you've been rate-limited.
+**Solution:**
+1. Check your spam/junk folder.
+2. Wait 60 seconds, then click **Resend code**.
+3. If the problem persists, contact your administrator — your email may not be registered.
 
-### Campaign Navigation
+### I see "No account found"
 
-When viewing a campaign, a secondary navigation appears:
+**Symptoms:** Error message after entering your email.
+**Cause:** Your email hasn't been invited to any organization.
+**Solution:** Ask your organization administrator to send you an invite. New users need an invitation before they can sign in.
 
-| Tab | Description |
-|-----|-------------|
-| **Overview** | Campaign stats and performance |
-| **Calls** | All calls in this campaign |
-| **Checks** | Quality checks configuration |
-| **Agents** | Agents assigned to this campaign |
-| **Reports** | AI-generated reports |
-| **Settings** | Campaign-specific settings |
+### My call is stuck on "Pending" or "Failed"
 
-### Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `⌘K` / `Ctrl+K` | Open AI Copilot |
-| `⌘/` / `Ctrl+/` | View keyboard shortcuts |
+**Symptoms:** Call doesn't progress through the pipeline.
+**Cause:** Various — file format issues, service interruptions, or configuration problems.
+**Solution:**
+1. Check that the audio file is a supported format.
+2. Wait a few minutes — processing queues may be busy.
+3. If the call shows **Failed**, click into it and try **Retry**.
+4. If retries fail, check the campaign's transcription settings.
 
 ---
 
 ## FAQ
 
-### How long does processing take?
+### How long does it take to analyze a call?
 
-| File Length | Transcription | Analysis | Total |
-|-------------|---------------|----------|-------|
-| < 5 minutes | ~1 minute | ~1 minute | 2-3 minutes |
-| 5-15 minutes | ~2 minutes | ~1 minute | 3-4 minutes |
-| 15-30 minutes | ~3 minutes | ~2 minutes | 5-6 minutes |
+Processing typically takes 1-3 minutes per call. Longer calls or busy periods may take slightly longer. You can upload multiple calls and TotalView processes them in parallel.
 
-Processing time can vary based on system load.
+### Can I use TotalView on mobile?
 
-### What happens when I first create an account?
+Yes. TotalView has a responsive design that works on mobile browsers. The sidebar becomes a drawer menu, and all core features are accessible.
 
-TotalView AI automatically:
-1. Creates a new organization with you as Admin
-2. Guides you through the onboarding wizard
-3. Sets up your first campaign with quality checks
-4. Prompts you to upload a test call
+### What audio formats are supported?
 
-### Can I use TotalView AI on mobile?
+TotalView supports common audio formats including MP3, WAV, and M4A. For best results, use clear recordings with minimal background noise.
 
-TotalView AI is optimized for desktop browsers. While the interface is responsive, we recommend using a laptop or desktop for the best experience, especially when reviewing calls.
+### How many quality checks can I have per campaign?
 
-### What if my invite link expired?
-
-Invite links expire after 7 days. Ask your organization admin to resend the invitation from **Settings → Members**.
-
-### Where can I get help?
-
-- **This Knowledge Base**: Comprehensive documentation
-- **AI Copilot**: Ask questions in natural language ([Learn more](/ai-copilot))
-- **Troubleshooting Guide**: Common issues and solutions ([View guide](/troubleshooting))
-- **Support**: Contact your organization admin or TotalView support
+Each campaign supports up to 50 quality checks. This is typically more than enough — most organizations use 10-25 checks per campaign.
 
 ---
 
-## Next Steps
+## Related Documentation
 
-Now that you understand the basics:
-
-1. **Invite Your Team** → [Organizations & Teams](/organizations-teams)
-2. **Create More Campaigns** → [Campaigns](/campaigns)
-3. **Master Quality Checks** → [Quality Checks](/quality-checks)
-4. **Set Up Agents** → [Agents](/agents)
-5. **Explore AI Copilot** → [AI Copilot](/ai-copilot)
+- [Understanding the Dashboard](/dashboard) — learn what all the numbers and charts mean
+- [Campaigns](/campaigns) — deep dive into campaign configuration
+- [Quality Checks](/quality-checks) — how to write effective evaluation criteria
+- [Organization Settings](/org-settings) — invite team members and configure roles
